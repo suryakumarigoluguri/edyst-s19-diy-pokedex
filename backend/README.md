@@ -1,8 +1,13 @@
-This folder contains two files
+This folder contains three files
+
 app.py--->In this file ,it gets the id from 
 the API and then based on the required id
-it will display the details of pokemon
-like(item,name,sprite)
+it will display the details of pokemon by 
+getting the data from pokemon_data,json file
+in the form(item,name,sprite)
+
+pokemon_data.json--->it contains the details 
+of 151 pokemons in the form of dictionaries
 
 requirements.txt--->This file
 contains the required items to
