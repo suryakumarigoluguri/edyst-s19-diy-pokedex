@@ -9,8 +9,9 @@ def not_found(e):
 
 def index(id):
     if (id>=1 and id<=151):
-        pk=json.load(open('pokemon_data.json'))
-        return json.dumps(pk[id-1])
+        a=json.load(open('pokemon_data.json'))
+        pk={"pokemon":a[id-1]}    
+        return json.dumps(pk)
     else:
         return render_template("404.html"), 404
         abort(404)
